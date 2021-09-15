@@ -1,0 +1,8 @@
+import requests
+URL = "https://drive.google.com/file/d/1GDeH-j3ZHxD-qdehT5vBB3nTc0zVE8PW/view"
+PARAMS = {'id':1}
+r = requests.get(url = URL, params = PARAMS)
+data = r.json()
+print(r.text)
+print(r.status_code)
+print(r.content)
